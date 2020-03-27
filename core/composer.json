@@ -1,0 +1,26 @@
+{
+    "name": "netesy/vooms",
+    "description": "PHP Framework For the fast",
+    "type": "framework",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Emmanuel Olisah",
+            "email": "netesy1@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+		"php": "^7.2",
+        "nette/mail": "^3.1@dev",
+        "nette/robot-loader": "^3.2@dev",
+        "nette/php-generator": "^3.3@dev",
+		"netesy/voom": "dev-master"
+	},    
+	"autoload": {
+        "psr-4": {
+            "Voom\\": "app/",
+            "Voom\\Config\\": "bootstrap/"
+        }
+    }
+}
