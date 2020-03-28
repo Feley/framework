@@ -12,9 +12,7 @@
     "minimum-stability": "dev",
     "require": {
 		"php": "^7.2",
-        "nette/mail": "^3.1@dev",
-        "nette/robot-loader": "^3.2@dev",
-        "nette/php-generator": "^3.3@dev",
+		"league/climate": "dev-master",
 		"netesy/voom": "dev-master"
 	},    
 	"autoload": {

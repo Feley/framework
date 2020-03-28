@@ -1,14 +1,11 @@
 <?php
 
-
 namespace Voom\Config;
 
 //use League\Flysytem\Adapter\Local;
 //use League\Flysytem\Filesystem;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Request;
-use Laminas\Diactoros\ServerRequestFactory;
-use eftec\bladeone\BladeOne;
 use Rocket\Routing\Router;
 
 class App
@@ -22,9 +19,6 @@ class App
 		$dotenv = \Dotenv\Dotenv::createMutable($path);
         $dotenv->load();
 		\Rocket\Config\Env::load($path);
-		// Start the routing
-		//$content = Router::start();
-
 		$content = Router::startNow();
 		return Response::create($content)->send();
 	}

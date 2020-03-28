@@ -11,7 +11,7 @@ class SiteController extends BaseController
 {
     public function index()
     {
-        return $this->view('site.index');
+        return view('site.index');
     }
 
     public function test()
