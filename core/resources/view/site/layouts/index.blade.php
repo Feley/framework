@@ -26,15 +26,16 @@
                     Voom Framework
                 </div>
                  @yield('content')
-                <div class="links">
-                    <a href="https://netesy.github.io/docs">Docs</a>
-                    <a href="https://github.com/netesy/voom">GitHub</a>
-                </div>
             </div>
         </div>
     </main>
     <footer>
     <h3>Voom Framework</h3>
+	<p><big>Designed by Emmanuel Olisah</big></p>
+	<div class="links">
+                    <a href="https://netesy.github.io/docs">Docs</a>
+                    <a href="https://github.com/netesy/voom">GitHub</a>
+                </div>
 </footer>
     </body>
 </html>

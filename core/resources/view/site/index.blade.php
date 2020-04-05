@@ -4,8 +4,8 @@
 <div class="container">
 <h2 class="container">
 <p>The Framework for The Fast</p>
+<p>fast is @_e('fast')</p>
+<p>@_ef('%s is fast','voom')</p>
 </h2>
-<p><big>Designed by Emmanuel Olisah</big></p>
-
 </div>
 @endsection
