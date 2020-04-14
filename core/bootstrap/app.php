@@ -16,10 +16,10 @@ class App
 		//$filesystem = new Filesystem($path);
 		//load the .env
 		$path = __DIR__.'/../';
-		$directory = $path.'bootstrap/'
+		$directory = $path.'bootstrap/';
 		\Rocket\Config\Env::load($path);
 		$content = Router::startNow();
-		$loader = new Rocket\Foundation\Loaders\PhpLoader();
+		$loader = new \Rocket\Foundation\Loaders\PhpLoader();
  		$loader->addDirectory($directory);
   		//s$loader->excludeDirectory('app/exclude');
   		$loader->register();
