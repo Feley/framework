@@ -16,10 +16,13 @@ class App
 		//$filesystem = new Filesystem($path);
 		//load the .env
 		$path = __DIR__.'/../';
-		$dotenv = \Dotenv\Dotenv::createMutable($path);
-        $dotenv->load();
+		$directory = $path.'bootstrap/'
 		\Rocket\Config\Env::load($path);
 		$content = Router::startNow();
+		$loader = new Rocket\Foundation\Loaders\PhpLoader();
+ 		$loader->addDirectory($directory);
+  		//s$loader->excludeDirectory('app/exclude');
+  		$loader->register();
 		return Response::create($content)->send();
 	}
 }

@@ -2,10 +2,7 @@
 
 <?php
 require_once __DIR__.'/vendor/autoload.php';
-if (php_sapi_name() !== 'cli') {
-    exit;
-}
 
-$console = new \Rocket\Console\Init;
+echo $console = new \Rocket\Console\Init;
 // $console->comment("Speed matters in construction");
 // echo "Hello World\n";

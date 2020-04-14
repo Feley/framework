@@ -9,9 +9,9 @@ First, create a new "Capsule" manager instance. Capsule aims to make configuring
 ```PHP
 use Rocket\Database\Database;
 
-$capsule = new Database;
+$db = new Database;
 
-$capsule->addConnection([
+$db->addConnection([
     'driver'    => 'mysql',
     'host'      => 'localhost',
     'database'  => 'database',
@@ -25,13 +25,13 @@ $capsule->addConnection([
 // Set the event dispatcher used by Eloquent models... (optional)
 use Illuminate\Events\Dispatcher;
 use Illuminate\Container\Container;
-$capsule->setEventDispatcher(new Dispatcher(new Container));
+$db->setEventDispatcher(new Dispatcher(new Container));
 
 // Make this Capsule instance available globally via static methods... (optional)
-$capsule->setAsGlobal();
+$db->setAsGlobal();
 
 // Setup the Eloquent ORM... (optional; unless you've used setEventDispatcher())
-//$capsule->bootEloquent();
+//$db->bootEloquent();
 ```
 
 > `composer require "illuminate/events"` required when you need to use observers with Eloquent.
