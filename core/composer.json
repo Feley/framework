@@ -1,6 +1,6 @@
 {
-    "name": "netesy/vooms",
-    "description": "PHP Framework For the fast",
+    "name": "feley/framework",
+    "description": "Reactive PHP Framework For the fast",
     "type": "framework",
     "license": "MIT",
     "authors": [
@@ -12,7 +12,7 @@
     "minimum-stability": "dev",
     "require": {
 		"php": "^7.2",
-		"netesy/voom": "dev-master"
+		"feley/core": "dev-master"
 	},    
 	"autoload": {
         "psr-4": {
